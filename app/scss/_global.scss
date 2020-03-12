@@ -1,0 +1,244 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+} 
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.headline-left {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 7.33333px;
+    opacity: 0.5;
+    padding-left: 100px;
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        top: 50%;
+    }
+}
+
+.headline-right {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 7.33333px;
+    opacity: 0.5;
+    padding-right: 100px;
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+    }
+}
+
+.title {
+    margin-bottom: -120px;
+
+    span {
+        font-size: 180px;
+        color: rgba(#fff, .02);
+        font-weight: 800;
+        position: relative;
+        left: -50px;
+    }
+
+    h3 {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        margin: 0;
+        color: #fff;
+        font-size: 80px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 1px;
+            background-color: $green;
+        }
+    }
+}
+
+.subtitle {
+    display: inline-block;
+    text-align: right;
+
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    span {
+        font-weight: 100;
+    }
+}
+
+.descr {
+    display: inline-block;
+
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    span {
+        font-weight: 100;
+    }
+
+}
+
+.star-list {
+    display: inline-block;
+
+    li {
+        display: inline-block;
+
+        &~li {
+            margin-left: -25px;
+        }
+    }
+}
+
+.btn {
+    font-size: 40px;
+    line-height: 36px;
+    font-weight: 800;
+
+    span {
+        background-color: $green;
+        padding: 17px 57px 17px 17px;
+        display: inline-block;
+        margin-left: 10px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+            top: 50%;
+            left: -10px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 21px;
+            background-image: url(../img/arrows-right.svg);
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.surf,
+.shop {
+    padding: 100px 0;
+}
+
+.holder {
+    padding: 100px 0 50px;
+}
+
+.quantity {
+    display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity input {
+    width: 45px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    background-color: transparent;
+    color: #fff;
+}
+
+.quantity input:focus {
+    outline: 0;
+}
+
+.quantity-nav {
+    float: left;
+    height: 42px;
+}
+
+.quantity-button {
+    position: relative;
+    cursor: pointer;
+    color: $green;
+    font-size: 35px;
+    font-weight: 400;
+    user-select: none;
+    border: none;
+}
+
+.quantity-button.quantity-up {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+}
+
+.quantity-button.quantity-down {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+.summ {
+    display: inline-block;
+}
