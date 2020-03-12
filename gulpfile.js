@@ -7,16 +7,16 @@ let gulp = require('gulp'),
 
 
 gulp.task('clean', async function(){
-  del.sync('dist')
+  del.sync('build')
 })
 
 gulp.task('scss', function(){
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('src/scss/**/*.scss')
     .pipe(sass())
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 8 versions']
     }))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('src/css'))
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -27,17 +27,17 @@ gulp.task('css', function(){
     'node_modules/animate.css/animate.css',
   ])
     .pipe(concat('_libs.scss'))
-    .pipe(gulp.dest('app/scss'))
+    .pipe(gulp.dest('src/scss'))
     .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('html', function(){
-  return gulp.src('app/*.html')
+  return gulp.src('src/*.html')
   .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('script', function(){
-  return gulp.src('app/js/*.js')
+  return gulp.src('src/js/*.js')
   .pipe(browserSync.reload({stream: true}))
 });
 
@@ -46,39 +46,39 @@ gulp.task('js', function(){
     'node_modules/slick-carousel/slick/slick.js'
   ])
     .pipe(concat('libs.min.js'))
-    .pipe(gulp.dest('app/js'))
+    .pipe(gulp.dest('src/js'))
     .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function() {
   browserSync.init({
       server: {
-          baseDir: "app/"
+          baseDir: "src/"
       }
   });
 });
 
 gulp.task('export', function(){
-  let buildHtml = gulp.src('app/**/*.html')
-    .pipe(gulp.dest('dist'));
+  let buildHtml = gulp.src('src/**/*.html')
+    .pipe(gulp.dest('build'));
 
-  let BuildCss = gulp.src('app/css/**/*.css')
-    .pipe(gulp.dest('dist/css'));
+  let BuildCss = gulp.src('src/css/**/*.css')
+    .pipe(gulp.dest('build/css'));
 
-  let BuildJs = gulp.src('app/js/**/*.js')
-    .pipe(gulp.dest('dist/js'));
+  let BuildJs = gulp.src('src/js/**/*.js')
+    .pipe(gulp.dest('build/js'));
     
-  let BuildFonts = gulp.src('app/fonts/**/*.*')
-    .pipe(gulp.dest('dist/fonts'));
+  let BuildFonts = gulp.src('src/fonts/**/*.*')
+    .pipe(gulp.dest('build/fonts'));
 
-  let BuildImg = gulp.src('app/img/**/*.*')
-    .pipe(gulp.dest('dist/img'));   
+  let BuildImg = gulp.src('src/img/**/*.*')
+    .pipe(gulp.dest('build/img'));   
 });
 
 gulp.task('watch', function(){
-  gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
-  gulp.watch('app/*.html', gulp.parallel('html'))
-  gulp.watch('app/js/*.js', gulp.parallel('script'))
+  gulp.watch('src/scss/**/*.scss', gulp.parallel('scss'));
+  gulp.watch('src/*.html', gulp.parallel('html'))
+  gulp.watch('src/js/*.js', gulp.parallel('script'))
 });
 
 gulp.task('build', gulp.series('clean', 'export'))
