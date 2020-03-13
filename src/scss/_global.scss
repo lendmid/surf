@@ -12,7 +12,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-} 
+}
 
 ul,
 li {
@@ -26,45 +26,53 @@ li {
     margin: 0 auto;
 }
 
-.headline-left {
-    font-size: 22px;
-    line-height: 32px;
-    text-align: right;
-    letter-spacing: 7.33333px;
-    opacity: 0.5;
-    padding-left: 100px;
-    position: relative;
-    display: inline-block;
-
-    &::before {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 1px;
-        background-color: #fff;
-        left: 0;
-        top: 50%;
-    }
+.surf,
+.shop,
+.holder {
+    padding: 50px 0 150px;
 }
 
-.headline-right {
-    font-size: 22px;
-    line-height: 32px;
-    text-align: right;
-    letter-spacing: 7.33333px;
-    opacity: 0.5;
-    padding-right: 100px;
-    position: relative;
-    display: inline-block;
+.headline {
+    &-left {
+        font-size: 22px;
+        line-height: 32px;
+        text-align: right;
+        letter-spacing: 7.33333px;
+        opacity: $opasity;
+        padding-left: 100px;
+        position: relative;
+        display: inline-block;
 
-    &::before {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 1px;
-        background-color: #fff;
-        right: 0;
-        top: 50%;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 1px;
+            background-color: #fff;
+            left: 0;
+            top: 50%;
+        }
+    }
+
+    &-right {
+        font-size: 22px;
+        text-align: right;
+        letter-spacing: 7.33333px;
+        line-height: 32px;
+        opacity: $opasity;
+        position: relative;
+        display: inline-block;
+        padding-right: 100px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 1px;
+            background-color: #fff;
+            right: 0;
+            top: 50%;
+        }
     }
 }
 
@@ -124,7 +132,6 @@ li {
     span {
         font-weight: 100;
     }
-
 }
 
 .star-list {
@@ -174,71 +181,90 @@ li {
     }
 }
 
-.surf,
-.shop {
-    padding: 100px 0;
-}
-
-.holder {
-    padding: 100px 0 50px;
-}
-
 .quantity {
     display: inline-block;
+
+    input {
+        width: 45px;
+        height: 45px;
+        border: none;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 800;
+        background-color: transparent;
+        color: #fff;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        &::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    &-nav {
+        float: left;
+        height: 42px;
+    }
+
+    &-button {
+        position: relative;
+        cursor: pointer;
+        color: $green;
+        font-size: 35px;
+        font-weight: 400;
+        user-select: none;
+        border: none;
+
+        &.quantity {
+            &-up {
+                position: absolute;
+                top: 40px;
+                right: 15px;
+            }
+
+            &-down {
+                position: absolute;
+                top: 40px;
+                right: 50px;
+            }
+        }
+    }
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
+.slider {
+    &-arrows {
+        position: absolute;
+        top: 40px;
+        right: 80px;
+        cursor: pointer;
+        z-index: 4;
+        top: 50px;
+        opacity: $opasity;
 
-input[type=number] {
-    -moz-appearance: textfield;
-}
+        &__left {
+            right: 125px;
+        }
+    }
 
-.quantity input {
-    width: 45px;
-    height: 45px;
-    border: none;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
-    background-color: transparent;
-    color: #fff;
-}
+    &-dotshead {
+        position: absolute;
+        right: 50px;
+        bottom: 36px;
+        max-width: 920px;
+        width: 100%;
 
-.quantity input:focus {
-    outline: 0;
-}
-
-.quantity-nav {
-    float: left;
-    height: 42px;
-}
-
-.quantity-button {
-    position: relative;
-    cursor: pointer;
-    color: $green;
-    font-size: 35px;
-    font-weight: 400;
-    user-select: none;
-    border: none;
-}
-
-.quantity-button.quantity-up {
-    position: absolute;
-    top: 40px;
-    right: 15px;
-}
-
-.quantity-button.quantity-down {
-    position: absolute;
-    top: 40px;
-    right: 50px;
-}
-
-.summ {
-    display: inline-block;
+        .slick-current {
+            .dots-box {
+                border-top: 4px solid $green;
+            }
+        }
+    }
 }
