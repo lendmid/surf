@@ -62,12 +62,20 @@
                 }
             }
         }
+
+        &__search {
+            padding: 33px 15px 15px;
+        }
+
+        &__date {
+            padding: 15px;
+        }
+
+        &__location {
+            margin-top: 42px;
+        }
     }
-
-
-
-
-    .header__search {
-        padding: 33px 15px 15px;
+    .slider-item__info-title{
+        font-size: 65px;
     }
 }

@@ -3837,4 +3837,10 @@ li {
       .header .menu__list a {
         padding: 15px; }
   .header__search {
-    padding: 33px 15px 15px; } }
+    padding: 33px 15px 15px; }
+  .header__date {
+    padding: 15px; }
+  .header__location {
+    margin-top: 42px; }
+  .slider-item__info-title {
+    font-size: 65px; } }
