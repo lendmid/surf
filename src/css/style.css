@@ -3808,18 +3808,9 @@ li {
     left: 60px; }
   .header .menu {
     padding-top: 10px; }
-  .header__search {
-    padding-bottom: 10px; }
-  .header__date {
-    font-size: 60px; }
-    .header__date span {
-      font-size: 14px;
-      padding-top: 0;
-      margin-bottom: 5px; }
-  .header__arrow {
-    left: 130px; } }
-
-@media (max-width: 1366px) {
+  .header__map svg {
+    width: 750px;
+    height: 372px; }
   .header__aside {
     position: absolute;
     border-right: none;
@@ -3830,6 +3821,8 @@ li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .header .slider-item__info-title {
+    font-size: 65px; }
   .header .menu {
     padding-top: 0; }
     .header .menu__list {
@@ -3839,28 +3832,58 @@ li {
       .header .menu__list a {
         padding: 15px; }
   .header__search {
-    padding: 33px 15px 15px; }
+    padding: 33px 15px 15px;
+    padding-bottom: 10px; }
   .header__date {
-    padding: 15px; }
+    padding: 15px;
+    font-size: 60px; }
+    .header__date span {
+      font-size: 14px;
+      padding-top: 0;
+      margin-bottom: 5px; }
   .header__location {
     margin-top: 42px; }
   .header__arrows {
     display: none; }
-  .slider-item__info-title {
-    font-size: 65px; } }
-
-@media (max-width: 1340px) {
-  .header__map svg {
-    width: 500px;
-    height: 250px; }
   .slider-arrows {
     top: 20px;
     right: 20px; }
     .slider-arrows__left {
       right: 60px; } }
 
+@media only screen and (max-width: 1280px) {
+  .header__map svg {
+    width: 500px;
+    height: 250px; } }
+
 @media (max-width: 1040px) {
   .header__search {
     padding: 40px 15px 15px; }
+  .header .slider-item__info {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-align: right; }
+    .header .slider-item__info-text {
+      font-size: 30px;
+      line-height: 20px;
+      margin-bottom: 30px;
+      margin-top: 10px; }
+    .header .slider-item__info-title {
+      font-size: 55px;
+      line-height: 55px;
+      margin-bottom: 20px; }
+  .slider-dotshead {
+    position: absolute;
+    right: 0;
+    left: 0;
+    max-width: 0 auto;
+    bottom: 5px; }
   .menu {
-    display: none; } }
+    display: none; }
+  .headline-left {
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 65px; }
+  .headline-left::before {
+    width: 50px; } }
