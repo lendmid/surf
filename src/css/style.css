@@ -3799,7 +3799,7 @@ li {
     .footer .btn span::after {
       display: none; }
 
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
   .logo img {
     width: 100px; }
   .header__title {
@@ -3853,10 +3853,10 @@ li {
 
 @media only screen and (max-width: 1280px) {
   .header__map svg {
-    width: 500px;
-    height: 250px; } }
+    width: 496px;
+    height: 372px; } }
 
-@media (max-width: 1040px) {
+@media only screen and (max-width: 1040px) {
   .header__search {
     padding: 40px 15px 15px; }
   .header .slider-item__info {
@@ -3873,8 +3873,9 @@ li {
       font-size: 55px;
       line-height: 55px;
       margin-bottom: 20px; }
+  .header .dots-box {
+    width: 130px; }
   .slider-dotshead {
-    position: absolute;
     right: 0;
     left: 0;
     max-width: 0 auto;
@@ -3887,3 +3888,8 @@ li {
     padding-left: 65px; }
   .headline-left::before {
     width: 50px; } }
+
+@media only screen and (max-height: 800px) {
+  .header__map svg {
+    width: 500px;
+    height: 250px; } }

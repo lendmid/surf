@@ -1,4 +1,4 @@
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
     .logo {
         img {
             width: 100px;
@@ -94,13 +94,13 @@
 @media only screen and (max-width : 1280px) {
     .header__map {
         svg {
-            width: 500px;
-            height: 250px;
+            width: 496px;
+            height: 372px;
         }
     }
 }
 
-@media (max-width: 1040px) {
+@media only screen and (max-width: 1040px) {
     .header {
         &__search {
             padding: 40px 15px 15px;
@@ -125,11 +125,13 @@
                 margin-bottom: 20px;
             }
         }
+
+        .dots-box {
+            width: 130px;
+        }
     }
 
-
     .slider-dotshead {
-        position: absolute;
         right: 0;
         left: 0;
         max-width: 0 auto;
@@ -151,7 +153,16 @@
     }
 }
 
-// @media only screen and (max-width : 1920px) {}
+
+
+@media only screen and (max-height : 800px) {
+    .header__map {
+        svg {
+            width: 500px;
+            height: 250px;
+        }
+    }
+}
 
 // @media only screen and (max-width : 1680px) {}
 
