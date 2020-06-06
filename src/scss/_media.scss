@@ -134,7 +134,7 @@
     .slider-dotshead {
         right: 0;
         left: 0;
-        max-width: 0 auto;
+        margin: 0 auto;
         bottom: 5px;
     }
 
@@ -152,8 +152,7 @@
         width: 50px;
     }
 }
-
-
+ 
 
 @media only screen and (max-height : 800px) {
     .header__map {

@@ -3878,7 +3878,7 @@ li {
   .slider-dotshead {
     right: 0;
     left: 0;
-    max-width: 0 auto;
+    margin: 0 auto;
     bottom: 5px; }
   .menu {
     display: none; }
