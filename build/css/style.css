@@ -9,7 +9,6 @@
   -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
-  -khtml-user-select: none;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent; }
@@ -3798,3 +3797,98 @@ li {
     padding: 17px 17px 15px; }
     .footer .btn span::after {
       display: none; }
+
+@media only screen and (max-width: 1440px) {
+  .logo img {
+    width: 100px; }
+  .header__title {
+    font-size: 130px;
+    line-height: 97px;
+    left: 60px; }
+  .header .menu {
+    padding-top: 10px; }
+  .header__map svg {
+    width: 750px;
+    height: 372px; }
+  .header__aside {
+    position: absolute;
+    border-right: none;
+    height: 108px;
+    padding-right: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header .slider-item__info-title {
+    font-size: 65px; }
+  .header .menu {
+    padding-top: 0; }
+    .header .menu__list {
+      text-align: center; }
+      .header .menu__list li {
+        display: inline-block; }
+      .header .menu__list a {
+        padding: 15px; }
+  .header__search {
+    padding: 33px 15px 15px;
+    padding-bottom: 10px; }
+  .header__date {
+    padding: 15px;
+    font-size: 60px; }
+    .header__date span {
+      font-size: 14px;
+      padding-top: 0;
+      margin-bottom: 5px; }
+  .header__location {
+    margin-top: 42px; }
+  .header__arrows {
+    display: none; }
+  .slider-arrows {
+    top: 20px;
+    right: 20px; }
+    .slider-arrows__left {
+      right: 60px; } }
+
+@media only screen and (max-width: 1280px) {
+  .header__map svg {
+    width: 496px;
+    height: 372px; } }
+
+@media only screen and (max-width: 1040px) {
+  .header__search {
+    padding: 40px 15px 15px; }
+  .header .slider-item__info {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-align: right; }
+    .header .slider-item__info-text {
+      font-size: 30px;
+      line-height: 20px;
+      margin-bottom: 30px;
+      margin-top: 10px; }
+    .header .slider-item__info-title {
+      font-size: 55px;
+      line-height: 55px;
+      margin-bottom: 20px; }
+  .header .dots-box {
+    width: 130px; }
+  .slider-dotshead {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 5px; }
+  .menu {
+    display: none; }
+  .headline-left {
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 65px; }
+  .headline-left::before {
+    width: 50px; } }
+
+@media only screen and (max-height: 800px) {
+  .header__map svg {
+    width: 500px;
+    height: 250px; } }
