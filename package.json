@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "animate.css": "^3.7.2",
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.13",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
