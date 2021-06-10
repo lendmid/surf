@@ -1,16 +1,16 @@
 {
-  "name": "gulp-start",
+  "name": "surf",
   "version": "1.0.0",
   "description": "start gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vadim Prokopchuk",
+  "author": "Dima Doroshenko",
   "license": "ISC",
   "devDependencies": {
     "animate.css": "^3.7.2",
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
@@ -21,7 +21,7 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1"
   }
 }
