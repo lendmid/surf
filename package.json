@@ -1,13 +1,14 @@
 {
   "name": "surf",
   "version": "1.0.0",
-  "description": "start gulp",
+  "description": "Pet project with layout and gulp",
   "main": "index.js",
+  "author": "lendmid",
+  "homepage": "https://github.com/lendmid/surf#readme",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dima Doroshenko",
-  "license": "ISC",
   "devDependencies": {
     "animate.css": "^3.7.2",
     "browser-sync": "^2.26.14",
