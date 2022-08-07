@@ -1,8 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    background-color: #171919;
+    background-color: $black;
     color: #fff;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -38,7 +42,7 @@ li {
         line-height: 32px;
         text-align: right;
         letter-spacing: 7.33333px;
-        opacity: $opasity;
+        opacity: $opacity;
         padding-left: 100px;
         position: relative;
         display: inline-block;
@@ -59,7 +63,7 @@ li {
         text-align: right;
         letter-spacing: 7.33333px;
         line-height: 32px;
-        opacity: $opasity;
+        opacity: $opacity;
         position: relative;
         display: inline-block;
         padding-right: 100px;
@@ -247,7 +251,7 @@ li {
         cursor: pointer;
         z-index: 4;
         top: 50px;
-        opacity: $opasity;
+        opacity: $opacity;
 
         &__left {
             right: 125px;
