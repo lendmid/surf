@@ -4,6 +4,7 @@ $(function () {
         fade: true,
         autoplay: true,
         autoplaySpeed: 4000,
+        pauseOnHover: false,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="">',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="">',
         asNavFor: '.slider-dotshead'
@@ -21,6 +22,7 @@ $(function () {
         slidesToScroll: 1,
         swipeToSlide: true,
         focusOnSelect: true,
+        pauseOnHover: false,
         autoplay: true,
         autoplaySpeed: 4000,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="">',

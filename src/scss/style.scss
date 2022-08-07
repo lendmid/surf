@@ -9,44 +9,26 @@
 
   &__slider {
     &-item {
-      //& > img {
-      //
-      //    height: 100vh;
-      //    background-size: cover;
-      //    background-repeat: no-repeat;
-      //    background-position: center;
-      //}
       &_1 {
         background-image: url(../img/header-bg1.jpg);
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &_2 {
         background-image: url(../img/header-bg2.jpeg);
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &_3 {
         background-image: url(../img/header-bg3.jpg);
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
       }
 
       &_4 {
         background-image: url(../img/header-bg4.jpg);
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
       }
+
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
