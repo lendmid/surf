@@ -2,6 +2,9 @@ $(function () {
 
     $('.header__slider').slick({
         fade: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnHover: false,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="">',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="">',
         asNavFor: '.slider-dotshead'
@@ -19,6 +22,9 @@ $(function () {
         slidesToScroll: 1,
         swipeToSlide: true,
         focusOnSelect: true,
+        pauseOnHover: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="">',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="">',
         asNavFor: '.slider-map'
@@ -39,7 +45,7 @@ $(function () {
 
     $('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
     $('.quantity').each(function () {
-        var spinner = $(this),
+        let spinner = $(this),
             input = spinner.find('input[type="number"]'),
             btnUp = spinner.find('.quantity-up'),
             btnDown = spinner.find('.quantity-down'),
@@ -47,22 +53,24 @@ $(function () {
             max = input.attr('max');
 
         btnUp.click(function () {
-            var oldValue = parseFloat(input.val());
+            let newVal
+            let oldValue = parseFloat(input.val());
             if (oldValue >= max) {
-                var newVal = oldValue;
+                newVal = oldValue;
             } else {
-                var newVal = oldValue + 1;
+                newVal = oldValue + 1;
             }
             spinner.find("input").val(newVal);
             spinner.find("input").trigger("change");
         });
 
         btnDown.click(function () {
-            var oldValue = parseFloat(input.val());
+            let newVal;
+            let oldValue = parseFloat(input.val());
             if (oldValue <= min) {
-                var newVal = oldValue;
+                newVal = oldValue;
             } else {
-                var newVal = oldValue - 1;
+                newVal = oldValue - 1;
             }
             spinner.find("input").val(newVal);
             spinner.find("input").trigger("change");
@@ -71,12 +79,12 @@ $(function () {
     });
 
     $('.quantity-button').on('click', function () {
-        var parents = $(this).parents('.holder-slider__info');
+        let parents = $(this).parents('.holder-slider__info');
         let summ = $('.summ', parents).data('nights') * $('.nights', parents).val() + $('.summ', parents).data('guests') * $('.guests', parents).val();
         $('.summ', parents).html('$' + summ);
     });
     $('.quantity').each(function () {
-        var parents = $(this).parents('.holder-slider__info');
+        let parents = $(this).parents('.holder-slider__info');
         let summ = $('.summ', parents).data('nights') * $('.nights', parents).val() + $('.summ', parents).data('guests') * $('.guests', parents).val();
         $('.summ', parents).html('$' + summ);
     });
@@ -84,5 +92,13 @@ $(function () {
     $('.surfboard-box__circle').on('click', function () {
         $(this).toggleClass('active')
     })
+
+
+    $('.autoplay').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 13,
+    });
 
 });
