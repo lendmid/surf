@@ -1,4 +1,4 @@
-# Surf project
+# Pet project №1: Surf
 ### Project was an order from friend
 
 ##### Preview: https://cntr.click/K9x3ABq 
