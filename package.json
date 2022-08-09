@@ -4,15 +4,17 @@
   "description": "Pet project with layout and gulp",
   "main": "index.js",
   "author": "lendmid",
-  "homepage": "https://github.com/lendmid/surf",
+  "homepage": "https://lendmid.github.io/surf",
   "license": "ISC",
   "scripts": {
     "start": "gulp start",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "animate.css": "^4.1.1",
     "browser-sync": "^2.27.10",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
