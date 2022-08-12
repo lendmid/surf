@@ -1,6 +1,6 @@
 # Surf
 
-#### Project was an order from friend
+#### Project was an order from freelance
 #### Preview: https://cntr.click/K9x3ABq 
 #### Figma layout: https://cntr.click/2xzLVS7
 
