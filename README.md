@@ -1,8 +1,8 @@
 # Surf
 
 #### Project was an order from freelance
-#### Preview: [https://cntr.click/K9x3ABq ](https://lcc.click/yyWC29b)
-#### Figma layout: [https://cntr.click/2xzLVS7](https://lcc.click/c6P1Xqp)
+#### Preview: https://lcc.click/yyWC29b
+#### Figma layout: https://lcc.click/c6P1Xqp
 
 #### `Tech stack:`
 - Html 5
