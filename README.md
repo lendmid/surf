@@ -1,8 +1,9 @@
 # Surf
 
-#### Project was an order from freelance
-#### Preview: https://lcc.click/yyWC29b
-#### Figma layout: https://lcc.click/c6P1Xqp
+### [Preview](https://lendmid.github.io/surf)
+### [Figma layout](https://www.figma.com/file/Z6828lETlCehGpJlOXCKHb/surf?node-id=0%3A2)
+
+#### Project was an order from a freelance
 
 #### `Tech stack:`
 - Html 5
